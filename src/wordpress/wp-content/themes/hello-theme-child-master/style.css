@@ -13,3 +13,29 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 */
 
 /* Add your custom styles here */
+
+/* butterfly Telos et post content article */
+.Page_butterfly_telos a, .post_article a{
+	text-decoration: underline !important ;
+  color: #FFFFFF !important;
+}
+
+
+/* homepage */
+.apparition {
+  animation: apparition 1.7s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+   ;
+  }
+  95% {
+    opacity: 0;
+   ;
+  }
+  100% {
+    opacity: 1;
+    ;
+  }
+}

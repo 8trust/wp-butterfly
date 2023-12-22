@@ -6,11 +6,11 @@ const ENV_TESTING = 'testing';
 const ENV_LOCAL = 'local';
 $config = [
     ENV_PRODUCTION => [
-        'DB_NAME' => '',
-        'DB_USER' => '',
-        'DB_PASSWORD' => '',
-        'DB_HOST' => '',
-        'WP_HOME' => '',
+        'DB_NAME' => 'butterfly',
+        'DB_USER' => 'butterfly',
+        'DB_PASSWORD' => 'WTuSJGpQ',
+        'DB_HOST' => 'localhost',
+        'WP_HOME' => 'https://www.fondationbutterfly.be',
         'WP_DEBUG' => false,
         'WP_CACHE' => true
     ],
