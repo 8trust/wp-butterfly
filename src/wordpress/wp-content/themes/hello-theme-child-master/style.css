@@ -22,8 +22,9 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 
 
 /* homepage */
-.apparition {
+/*.apparition {
   animation: apparition 1.7s;
+  
 }
 @keyframes apparition {
   0% {
@@ -38,4 +39,27 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
     opacity: 1;
     ;
   }
+}*/
+.apparition2 h2 {
+  overflow: hidden; 
+  border-right: 1px solid white; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
