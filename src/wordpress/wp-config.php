@@ -1,4 +1,6 @@
 <?php
+define( 'WP_CACHE', false ); // Added by WP Rocket
+
 
 // ** MySQL settings - You can get this info from your web host ** //
 const ENV_PRODUCTION = 'production';
@@ -38,7 +40,7 @@ if (getenv('ENV')){
 	define( 'WP_DEBUG_DISPLAY', false );
 	define( 'WP_DEBUG_LOG', true );
 	define('ENV',getenv('ENV'));
-}else if (stristr($_SERVER['SERVER_NAME'], "...")) {
+}else if (stristr($_SERVER['SERVER_NAME'], "fondationbutterfly.be")) {
   define('ENV', 'production');
 } elseif (stristr($_SERVER['SERVER_NAME'], "butterfly.testing.8trust.com")) {
   define('ENV', 'testing');
@@ -53,7 +55,8 @@ if (!key_exists(ENV, $config)) {
 
 foreach ($config[ENV] as $k => $v) {
   define($k, $v);
-}/**
+}
+/**
  * The base configuration for WordPress
  *
  * The wp-config.php creation script uses this file during the installation.
